@@ -23,7 +23,7 @@
   ```
   source activate ENV_NAME
   ```
-- Using environment in a job
+- Using the environment in a job
   ```
   module load Anaconda3/2022.10
   eval "$(conda shell.bash hook)"
@@ -34,6 +34,33 @@
   conda env list
   conda deactivate
   conda remove --name ENV_NAME --all
+  ```
+## [Install PyTorch](https://pytorch.org/)
+- Install package
+  After activating conda environment
+  ```
+  conda install ...
+  ```
+  or
+  ```
+  pip install ...
+  ```
+- Check if PyTorch is installed correctly and is working as expected
+  1. Import PyTorch and Check Version
+  ```
+  python -c "import torch; print(torch.__version__)"
+  ```
+  2. Perform a Simple Tensor Operation
+  ```
+  python -c "import torch; x = torch.rand(5, 3); print(x)"
+  ```
+  3. Check CUDA Availability
+  ```
+  python -c "import torch; print(torch.cuda.is_available())"
+  ```
+  4. Create a Tensor on GPU (If CUDA is Available):
+  ```
+  python -c "import torch; x = torch.rand(5, 3); print(x.to('cuda') if torch.cuda.is_available() else 'CUDA not available')"
   ```
 
 ## [Clearing Pip Cache](https://linuxhandbook.com/clear-pip-cache/)
