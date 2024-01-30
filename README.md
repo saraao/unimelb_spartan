@@ -65,3 +65,20 @@
 
 ## [Clearing Pip Cache](https://linuxhandbook.com/clear-pip-cache/)
 
+- Have a look at the cache
+  ```
+  # check the cache size of pip
+  pip cache info
+  # check the cache of the individual packages
+  pip cache list
+  # check the directory where the cache resides
+  pip cache dir
+  ```
+- Remove Pip cache
+  ```
+  # remove a specific package
+  pip cache remove [package_name]
+  # remove everything from the pip cache
+  pip cache purge 
+  ```
+
