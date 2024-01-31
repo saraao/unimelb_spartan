@@ -81,7 +81,11 @@
   # remove everything from the pip cache
   pip cache purge 
   ```
-## interactive gpu
+## Interactive GPU
+- Monitor of NVIDIA GPU devices
+  ```
+  nvidia-smi
+  ```
 - Kill any running python process
   ```
   pkill -9 python
