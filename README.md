@@ -81,7 +81,7 @@
   # remove everything from the pip cache
   pip cache purge 
   ```
-## [interactive]
+## interactive gpu
 - Kill any running python process
   ```
   pkill -9 python
