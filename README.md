@@ -81,4 +81,8 @@
   # remove everything from the pip cache
   pip cache purge 
   ```
-
+## [interactive]
+- Kill any running python process
+  ```
+  pkill -9 python
+  ```
