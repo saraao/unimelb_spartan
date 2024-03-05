@@ -90,3 +90,16 @@
   ```
   pkill -9 python
   ```
+
+## Mediaflux
+  ```
+  module load unimelb-mf-clients
+  ```
+- Upload
+  ```
+  unimelb-mf-upload --mf.config ~/.Arcitecta/mflux.cfg --nb-workers 4  --namespace /projects/proj-.../ /home/.../workspace/punim.../folder_name/
+  ```
+- Download
+  ```
+  unimelb-mf-download --mf.config ~/.Arcitecta/mflux.cfg --nb-workers 4  --out /home/.../workspace/punim.../folder_name/  /projects/proj-.../folder_name/
+  ```
